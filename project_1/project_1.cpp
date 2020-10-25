@@ -15,6 +15,8 @@ int main()
     cout << "\nc=a+b= " << c;
     c = a * b;
     cout << "\nc=a*b= " << c;
+    c = a - b;
+    cout << "\nc=a-b= " << c;
     cout << "\nHello World!\n";
     cout << "It is my first program!\n";
 }
