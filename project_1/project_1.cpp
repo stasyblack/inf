@@ -3,10 +3,47 @@
 
 #include <iostream>
 
+using namespace std;
+
+double add_numb(int a1, int b1)
+{
+    return (a1 + b1);
+}
+double sub_numb(int a1, int b1)
+{
+    return (a1 - b1);
+}
+double mul_numb(int a1, int b1)
+{
+    return (a1 * b1);
+}
+double div_numb(int a1, int b1)
+{
+    return (a1 / b1);
+}
+void test(int a1, int b1)
+{
+    cout << "\nFor numbers a=" << a1 << " b=" << b1 << " calculations are correct";
+}
+
 int main()
 {
-    std::cout << "Hello World!\n";
-    std::cout << "It is my first program!\n";
+    double a, b, c;
+    cout << "Input a: ";
+    cin >> a;
+    cout << "\nInput b: ";
+    cin >> b;
+    //c = a + b;
+    cout << "\nc=a+b= " << add_numb(a, b);
+    //c = a * b;
+    cout << "\nc=a*b= " << mul_numb(a,b);
+    //c = a - b;
+    cout << "\nc=a-b= " << sub_numb(a, b);
+    //c = a / b;
+    cout << "\nc=a/b= " << div_numb(a,b);
+    if ((add_numb(a, b) == (a + b)) && (mul_numb(a, b) == (a * b)) && (sub_numb(a, b) == (a - b)) && (div_numb(a, b) == (a / b))) test(a, b);
+    cout << "\nHello World!\n";
+    cout << "It is my first program!\n";
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
