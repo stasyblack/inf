@@ -6,7 +6,7 @@
 using namespace std;
 int main()
 {
-    int a, b, c;
+    double a, b, c;
     cout << "Input a: ";
     cin >> a;
     cout << "\nInput b: ";
@@ -17,6 +17,8 @@ int main()
     cout << "\nc=a*b= " << c;
     c = a - b;
     cout << "\nc=a-b= " << c;
+    c = a / b;
+    cout << "\nc=a/b= " << c;
     cout << "\nHello World!\n";
     cout << "It is my first program!\n";
 }
