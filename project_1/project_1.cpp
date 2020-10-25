@@ -3,10 +3,18 @@
 
 #include <iostream>
 
+using namespace std;
 int main()
 {
-    std::cout << "Hello World!\n";
-    std::cout << "It is my first program!\n";
+    int a, b, c;
+    cout << "Input a: ";
+    cin >> a;
+    cout << "\nInput b: ";
+    cin >> b;
+    c = a + b;
+    cout << "\nc= " << c;
+    cout << "\nHello World!\n";
+    cout << "It is my first program!\n";
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
